@@ -9,11 +9,11 @@ export const UserProfileCard: React.FC<UserProfileCardProps> = ({
   children,
 }) => {
   return (
-    <div>
-      <h1>{user.name}</h1>
+    <div className="mt-8">
+      <h2>{user.name}</h2>
       {showEmail && <p>{user.email}</p>}
       {showRole && <p>{user.role}</p>}
-      <button onClick={() => onEdit?.(user.id)}>Edit</button>
+      <button onClick={() => onEdit?.(user.id)} className="bg-blue-500 p-2 w-xs text-white">Edit Profile</button>
       {children}
     </div>
   )
