@@ -23,9 +23,9 @@ const product = {
 
 function App() {
    return (
-    <>
     <div>
-    <AlertBox type="success" message="Your profile has been updated successfully!"
+    <div className="p-4">
+      <AlertBox type="success" message="Your profile has been updated successfully!"
     onClose={() => alert('Alert closed')}>
       <p className="text-sm">You can now continue using the application.</p>
     </AlertBox>
@@ -55,7 +55,7 @@ function App() {
   </div>
 </ProductDisplay>
   
-  </>
+  </div>
    )
 }
 export default App
