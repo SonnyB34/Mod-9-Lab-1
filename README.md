@@ -37,4 +37,6 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 2. The considerations I made when designing the component interfaces was passing product in the component so it works for any product instead of having to make a new card for each one. I used showDescription and showStockStatus as optional so the card works either way whether it shows a description or stock status. I centered everything using tailwind flex and added a little padding and margin.
 
-3. The way I ensured type safety across my components was 
+3. The way I ensured type safety across my components was by using REACT.FC<ProductDisplayProps> for example to specify what the card is allowed to recieve so mistakes can get caught right away.
+
+4. The challenges I faced when implementing component composition was using the props figuring out what to pass in and where. I also had trouble at first understanding the optional props and making them optional in the funcitonality.
