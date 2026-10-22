@@ -30,3 +30,11 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Reflections
+
+1. I handled the optional props in my components by making them conditonals so if there was a description or stock status it would show it, if there wasnt a stock status or description it would show nothing. For the onEdit and onAddToCart i added the ? to my functionality to basically say if check if theres function here if so run the functionality if not do nothing.
+
+2. The considerations I made when designing the component interfaces was passing product in the component so it works for any product instead of having to make a new card for each one. I used showDescription and showStockStatus as optional so the card works either way whether it shows a description or stock status. I centered everything using tailwind flex and added a little padding and margin.
+
+3. The way I ensured type safety across my components was 

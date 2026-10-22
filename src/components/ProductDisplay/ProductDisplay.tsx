@@ -10,9 +10,9 @@ export const ProductDisplay: React.FC<ProductDisplayProps> = ({
   return (
     <div className="flex justify-center items-center">
     <div className="mt-8">
-      <img src={product.imageUrl} className="w-screen h-150" />
-      <h2 className="pt-5 text-center">{product.name}</h2>
-        <h3 className="text-center">{product.price}</h3>
+      <img src={product.imageUrl} alt={product.name} className="w-full h-48" />
+      <h2 className="pt-5 text-center font-medium text-xl">{product.name}</h2>
+        <h3 className="text-center text-xl">${product.price}</h3>
         {showDescription && <p className="text-center">{product.description}</p>}
         {showStockStatus && (
           <p className="text-center">{product.inStock ? 'In Stock' : 'Out of Stock'}</p>
